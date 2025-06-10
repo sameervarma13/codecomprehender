@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="228pt" height="127pt" viewBox="0.00 0.00 227.52 127.20">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 123.2)">
+<title>Architecture</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-123.2 223.52,-123.2 223.52,4 -4,4"/>
+<!-- UserService -->
+<g id="node1" class="node">
+<title>UserService</title>
+<polygon fill="lightblue" stroke="black" points="122.51,-119.2 1.95,-119.2 1.95,-77.6 122.51,-77.6 122.51,-119.2"/>
+<text text-anchor="middle" x="62.23" y="-102.6" font-family="Times,serif" font-size="14.00">UserService</text>
+<text text-anchor="middle" x="62.23" y="-85.8" font-family="Times,serif" font-size="14.00">(UserService.java)</text>
+</g>
+<!-- StringHelper -->
+<g id="node3" class="node">
+<title>StringHelper</title>
+<polygon fill="lightblue" stroke="black" points="124.46,-41.6 0,-41.6 0,0 124.46,0 124.46,-41.6"/>
+<text text-anchor="middle" x="62.23" y="-25" font-family="Times,serif" font-size="14.00">StringHelper</text>
+<text text-anchor="middle" x="62.23" y="-8.2" font-family="Times,serif" font-size="14.00">(StringHelper.java)</text>
+</g>
+<!-- UserService&#45;&gt;StringHelper -->
+<g id="edge1" class="edge">
+<title>UserService-&gt;StringHelper</title>
+<path fill="none" stroke="red" stroke-dasharray="1,5" d="M62.23,-77.14C62.23,-69.79 62.23,-61.31 62.23,-53.23"/>
+<polygon fill="red" stroke="red" points="65.73,-53.37 62.23,-43.37 58.73,-53.37 65.73,-53.37"/>
+</g>
+<!-- User -->
+<g id="node2" class="node">
+<title>User</title>
+<polygon fill="lightblue" stroke="black" points="219.52,-119.2 140.94,-119.2 140.94,-77.6 219.52,-77.6 219.52,-119.2"/>
+<text text-anchor="middle" x="180.23" y="-102.6" font-family="Times,serif" font-size="14.00">User</text>
+<text text-anchor="middle" x="180.23" y="-85.8" font-family="Times,serif" font-size="14.00">(User.java)</text>
+</g>
+</g>
+</svg>
