@@ -13,12 +13,28 @@ An automated tool for analyzing Java codebases that generates JavaDoc comments a
 
 ## Code Structure
 
-- **`main.py`** - Main entry point that orchestrates the entire process, handles command-line arguments, and coordinates parallel processing
-- **`java_parser.py`** - Parses Java files using javalang to extract methods, class structures, imports, and inheritance relationships
-- **`comment_generator.py`** - Handles OpenAI API calls to generate JavaDoc comments, includes async processing and batch optimization
-- **`architecture_generator.py`** - Analyzes repository structure and generates markdown architecture reports
-- **`visual_architecture.py`** - Creates visual diagrams in Mermaid and Graphviz DOT formats
+### 🔧 Core Python Files
 
+- **`main.py`** — Main entry point that orchestrates the entire process, handles command-line arguments, and coordinates parallel processing  
+- **`java_parser.py`** — Parses Java files using `javalang` to extract methods, class structures, imports, and inheritance relationships  
+- **`comment_generator.py`** — Handles OpenAI API calls to generate JavaDoc comments, includes async processing and batch optimization  
+- **`architecture_generator.py`** — Analyzes repository structure and generates markdown architecture reports  
+- **`visual_architecture.py`** — Creates visual diagrams in Mermaid and Graphviz DOT formats  
+
+### 📁 Output Folders
+
+- **`commented_outputs/`**
+  - Contains generated JavaDoc-commented files for each processed project
+  - Example subfolders:
+    - `test_project/` — Output for the sample Java project
+    - `kitchensink_project/` — Output for the large KitchenSink test project
+
+- **`architecture_diagrams/`**
+  - Contains architecture reports and visual diagrams for each project
+  - Includes:
+    - `project_architecture.md`
+    - `project_architecture_mermaid.md`
+    - `project_architecture.dot`
 
 ## Installation
 
