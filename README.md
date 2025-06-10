@@ -13,7 +13,7 @@ An automated tool for analyzing Java codebases that generates JavaDoc comments a
 
 ## Code Structure
 
-### 🔧 Core Python Files
+### Core Python Files
 
 - **`main.py`** — Main entry point that orchestrates the entire process, handles command-line arguments, and coordinates parallel processing  
 - **`java_parser.py`** — Parses Java files using `javalang` to extract methods, class structures, imports, and inheritance relationships  
@@ -21,7 +21,7 @@ An automated tool for analyzing Java codebases that generates JavaDoc comments a
 - **`architecture_generator.py`** — Analyzes repository structure and generates markdown architecture reports  
 - **`visual_architecture.py`** — Creates visual diagrams in Mermaid and Graphviz DOT formats  
 
-### 📁 Output Folders
+### Output Folders
 
 - **`commented_outputs/`**
   - Contains generated JavaDoc-commented files for each processed project
