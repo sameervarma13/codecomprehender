@@ -11,6 +11,15 @@ An automated tool for analyzing Java codebases that generates JavaDoc comments a
 - **Processes files in parallel** for faster execution
 - **Creates commented copies** without modifying original files
 
+## Code Structure
+
+- **`main.py`** - Main entry point that orchestrates the entire process, handles command-line arguments, and coordinates parallel processing
+- **`java_parser.py`** - Parses Java files using javalang to extract methods, class structures, imports, and inheritance relationships
+- **`comment_generator.py`** - Handles OpenAI API calls to generate JavaDoc comments, includes async processing and batch optimization
+- **`architecture_generator.py`** - Analyzes repository structure and generates markdown architecture reports
+- **`visual_architecture.py`** - Creates visual diagrams in Mermaid and Graphviz DOT formats
+
+
 ## Installation
 
 ```bash
