@@ -1,0 +1,37 @@
+digraph Architecture {
+    rankdir=TB;
+    node [shape=box, style=filled, fillcolor=lightblue];
+
+    "RemoteMemberRegistrationIT" [label="RemoteMemberRegistrationIT\n(RemoteMemberRegistrationIT.java)"];
+    "MemberRegistrationIT" [label="MemberRegistrationIT\n(MemberRegistrationIT.java)"];
+    "MongoDBConfig" [label="MongoDBConfig\n(MongoDBConfig.java)"];
+    "Main" [label="Main\n(Main.java)"];
+    "ApplicationConfiguration" [label="ApplicationConfiguration\n(ApplicationConfiguration.java)"];
+    "Resources" [label="Resources\n(Resources.java)"];
+    "MemberController" [label="MemberController\n(MemberController.java)"];
+    "Member" [label="Member\n(Member.java)"];
+    "DatabaseSequence" [label="DatabaseSequence\n(DatabaseSequence.java)"];
+    "MemberRegistration" [label="MemberRegistration\n(MemberRegistration.java)"];
+    "MemberListProducer" [label="MemberListProducer\n(MemberListProducer.java)"];
+    "MemberResourceRESTService" [label="MemberResourceRESTService\n(MemberResourceRESTService.java)"];
+
+    "RemoteMemberRegistrationIT" -> "Member" [style=dotted, color=red];
+    "MemberRegistrationIT" -> "Main" [style=dotted, color=red];
+    "MemberRegistrationIT" -> "Member" [style=dotted, color=red];
+    "MemberRegistrationIT" -> "MemberRegistration" [style=dotted, color=red];
+    "MemberRegistrationIT" -> "MongoDBConfig" [style=dotted, color=red];
+    "SpringBootServletInitializer" -> "Main" [arrowhead=empty, color=blue];
+    "Main" -> "ApplicationConfiguration" [style=dotted, color=red];
+    "ApplicationListener" -> "ApplicationConfiguration" [arrowhead=empty, style=dashed, color=green];
+    "ApplicationConfiguration" -> "DatabaseSequence" [style=dotted, color=red];
+    "ApplicationConfiguration" -> "Member" [style=dotted, color=red];
+    "MemberController" -> "MemberListProducer" [style=dotted, color=red];
+    "MemberController" -> "Member" [style=dotted, color=red];
+    "MemberController" -> "MemberRegistration" [style=dotted, color=red];
+    "Serializable" -> "Member" [arrowhead=empty, style=dashed, color=green];
+    "MemberRegistration" -> "DatabaseSequence" [style=dotted, color=red];
+    "MemberRegistration" -> "Member" [style=dotted, color=red];
+    "MemberListProducer" -> "Member" [style=dotted, color=red];
+    "MemberResourceRESTService" -> "Member" [style=dotted, color=red];
+    "MemberResourceRESTService" -> "MemberRegistration" [style=dotted, color=red];
+}

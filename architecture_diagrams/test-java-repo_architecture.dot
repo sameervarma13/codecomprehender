@@ -1,0 +1,10 @@
+digraph Architecture {
+    rankdir=TB;
+    node [shape=box, style=filled, fillcolor=lightblue];
+
+    "UserService" [label="UserService\n(UserService.java)"];
+    "User" [label="User\n(User.java)"];
+    "StringHelper" [label="StringHelper\n(StringHelper.java)"];
+
+    "UserService" -> "StringHelper" [style=dotted, color=red];
+}
